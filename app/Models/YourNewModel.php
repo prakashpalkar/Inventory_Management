@@ -1,0 +1,31 @@
+<?php
+
+
+
+
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+use App\Models\migrations;
+
+class YourNewModel extends Model
+{
+   
+
+
+function index(){
+
+    echo"dfgd";
+
+    
+   
+return migration::all();
+   
+print_r($ta);
+
+}
+
+}

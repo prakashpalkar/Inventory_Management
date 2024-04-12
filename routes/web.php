@@ -13,57 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+
+
+
+
+use App\Http\Controllers\ImageController;
+
+
+
+
+Route::get('/list', function () {
+    Route::get('/' , [ImageController::class,'show']);
 });
 
 
-
-Route::get('/2', function () {
-    return view('2');
-});
-
-Route::get('/3', function () {
-    return view('3');
-});
-
-
-Route::get('/dataview', function () {
-    return view([CustomerControler::class,'view']);
-});
-
-
-Route::get('/3', function () {
-    return view('3');
-});
-
-
-
-Route::get('/customer', function () {
-    $customer=Customers::all();
-    echo"<pre>fdhgfh";
-    echo"trytry";
-print_r($customer);
-
-
-});
-
-
-Route::get('/3', function () {
-    return view('3');
-});
-
-
-
-
-Route::get('/3', function () {
-    return view('3');
-});
-
-
-
-
-
-Route::get('/3', function () {
-    return view('3');
-});
+Route::get('/' , [ImageController::class,'show']);
